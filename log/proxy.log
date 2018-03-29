@@ -1,0 +1,916 @@
+2017-12-31 14:41:39,691 WARNING proxy # Ethereum Stratum proxy version: 0.0.5
+2017-12-31 14:41:39,692 WARNING proxy # Trying to connect to Stratum pool at us1.ethermine.org:4444
+2017-12-31 14:41:39,692 WARNING proxy # Trying to connect to failover Stratum pool-1 at us2.ethermine.org:4444
+2017-12-31 14:41:39,692 WARNING proxy # Trying to connect to failover Stratum pool-2 at eth-us.dwarfpool.com:8008
+2017-12-31 14:41:39,692 WARNING proxy # Trying to connect to failover Stratum pool-3 at eth-hk.dwarfpool.com:8008
+2017-12-31 14:41:39,753 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 14:41:39,754 INFO proxy # Connected to Stratum pool at us2.ethermine.org:4444
+2017-12-31 14:41:39,759 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 14:41:39,759 INFO proxy # Connected to Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 14:41:39,780 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 14:41:39,780 INFO proxy # Connected to Stratum pool at us1.ethermine.org:4444
+2017-12-31 14:41:39,824 WARNING proxy # -----------------------------------------------------------------------
+2017-12-31 14:41:39,824 WARNING proxy # PROXY IS LISTENING ON ALL IPs ON PORT 8080
+2017-12-31 14:41:39,824 WARNING proxy # -----------------------------------------------------------------------
+2017-12-31 14:41:39,824 WARNING proxy # Wallet: 0x9A76dcdda2DC9f2Af446E12AfDF44e74a788A5Fa
+2017-12-31 14:41:39,824 WARNING proxy # Worker ID enabled: True
+2017-12-31 14:41:39,824 WARNING proxy # Email monitoring disabled
+2017-12-31 14:41:39,825 WARNING proxy # Failover enabled: True
+2017-12-31 14:41:39,825 WARNING proxy # -----------------------------------------------------------------------
+2017-12-31 14:41:39,847 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:41:39,865 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:41:39,958 INFO stats # 4 peers connected, state changed 1 times
+2017-12-31 14:41:39,958 INFO proxy # Connected to Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 14:42:00,819 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:01,328 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:02,611 INFO proxy # Hashrate for nir-pc is 0.0 MHs
+2017-12-31 14:42:05,069 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:07,270 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:07,435 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:09,516 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:09,890 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:10,107 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:11,937 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:13,398 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:13,926 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:15,145 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:34,181 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:34,241 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:39,929 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:40,357 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:51,572 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:52,275 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:42:55,481 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:43:09,968 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:43:10,600 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:43:22,089 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:43:22,123 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:43:23,433 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:43:25,519 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:43:25,726 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:43:40,019 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:43:40,846 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:44:10,061 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:44:11,091 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:44:17,978 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:44:18,776 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:44:21,168 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:44:31,051 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:44:31,130 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:44:40,099 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:44:41,381 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:04,655 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:05,327 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:06,593 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:10,138 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:11,631 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:15,118 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:15,277 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:16,255 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:16,670 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:19,851 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:19,867 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:21,708 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:33,646 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:33,752 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:36,829 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:40,178 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:45:41,869 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:06,422 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:06,443 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:10,216 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:12,117 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:18,840 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:19,152 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:22,196 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:40,255 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:42,379 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:47,305 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:47,650 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:46:52,485 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:47:07,519 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:47:07,729 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:47:08,465 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:47:10,294 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:47:12,758 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:47:17,847 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:47:22,840 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:47:40,406 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:47:43,008 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:48:10,452 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:48:13,273 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:48:28,856 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:48:33,142 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:48:33,436 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:48:40,492 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:48:43,522 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:49:10,531 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:49:13,765 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:49:40,573 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:49:43,435 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:49:43,441 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:49:44,030 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:50:10,623 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:50:14,287 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:50:18,835 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:50:19,184 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:50:19,384 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:50:24,423 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:50:24,703 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:50:29,471 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:50:40,669 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:50:44,592 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:03,556 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:03,702 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:05,948 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:06,391 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:09,802 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:10,712 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:14,841 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:34,674 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:35,293 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:36,612 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:37,018 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:38,083 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:38,242 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:40,752 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:41,322 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:41,535 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:52,112 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:53,530 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:51:55,177 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:02,714 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:02,827 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:05,254 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:10,791 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:15,343 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:30,003 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:30,644 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:35,503 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:40,829 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:45,594 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:54,541 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:55,184 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:55,675 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:52:58,987 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:53:00,047 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:53:00,714 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:53:10,869 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:53:15,837 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:53:22,517 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:53:22,705 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:53:35,572 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:53:35,598 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:53:35,992 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:53:40,908 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:53:41,609 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:10,957 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:11,851 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:13,899 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:14,495 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:16,901 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:19,620 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:19,684 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:21,940 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:23,817 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:23,921 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:41,006 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:42,106 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:47,402 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:47,862 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:49,966 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:50,328 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:52,192 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:55,475 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:54:55,494 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:01,613 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:01,739 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:02,295 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:02,450 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:04,829 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:05,195 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:07,278 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:07,415 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:10,489 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:12,454 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:41,083 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:42,694 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:49,806 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:50,881 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:55:59,730 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:00,113 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:02,862 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:11,125 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:12,988 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:12,994 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:13,090 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:19,651 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:20,128 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:20,238 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:24,033 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:28,227 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:28,795 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:29,161 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:33,266 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:41,183 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:42,662 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:42,746 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:43,345 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:49,239 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:49,519 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:59,277 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:56:59,337 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:03,506 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:11,222 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:13,585 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:15,010 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:15,301 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:18,625 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:19,490 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:19,616 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:22,478 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:22,802 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:22,951 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:23,663 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:24,120 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:26,922 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:27,598 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:28,703 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:32,005 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:32,251 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:33,746 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:34,456 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:34,473 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:37,342 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:38,405 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:38,784 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:41,271 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:43,824 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:46,294 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:46,405 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:47,898 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:50,057 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:53,905 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:55,753 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:57:55,913 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:03,650 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:03,940 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:04,026 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:05,703 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:09,076 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:11,314 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:14,114 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:18,400 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:18,558 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:19,158 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:19,917 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:23,246 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:23,344 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:24,205 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:24,353 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:24,414 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:29,248 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:31,948 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:32,045 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:34,288 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:41,355 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:58:44,367 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:59:10,444 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:59:10,862 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:59:14,609 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:59:41,436 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:59:44,861 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:59:45,874 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:59:46,515 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:59:54,795 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:59:55,485 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 14:59:59,984 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:03,220 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:03,613 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:05,031 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:10,073 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:10,579 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:15,114 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:24,516 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:24,941 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:25,240 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:40,869 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:41,216 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:45,399 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:50,285 INFO proxy # Hashrate for nir-pc is 0.051 MHs
+2017-12-31 15:00:50,611 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:00:50,654 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:11,564 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:13,447 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:13,901 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:15,655 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:33,551 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:33,667 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:41,608 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:41,859 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:42,043 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:47,912 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:48,056 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:50,062 INFO proxy # Hashrate for nir-pc is 0.21393 MHs
+2017-12-31 15:01:50,954 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:54,499 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:54,777 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:01:55,996 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:03,593 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:03,710 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:05,021 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:05,288 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:11,657 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:16,173 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:26,788 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:26,979 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:31,290 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:41,697 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:46,412 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:48,426 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:48,829 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:50,024 INFO proxy # Hashrate for nir-pc is 0.208457 MHs
+2017-12-31 15:02:51,456 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:54,518 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:54,530 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:56,496 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:57,222 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:02:57,255 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:03:01,536 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:03:11,749 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:03:16,658 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:03:32,213 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:03:32,336 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:03:36,828 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:03:41,804 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:03:41,868 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:03:50,025 INFO proxy # Hashrate for nir-pc is 0.20796 MHs
+2017-12-31 15:04:05,324 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:05,375 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:05,502 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:06,191 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:08,320 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:12,117 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:23,140 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:23,385 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:41,883 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:42,376 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:45,389 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:45,953 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:47,110 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:50,167 INFO proxy # Hashrate for nir-pc is 0.206965 MHs
+2017-12-31 15:04:52,668 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:53,324 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:57,516 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:59,219 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:04:59,308 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:02,554 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:11,928 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:12,636 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:35,213 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:35,281 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:37,052 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:38,414 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:38,543 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:39,198 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:42,927 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:43,543 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:43,822 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:46,677 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:47,457 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:47,967 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:50,109 INFO proxy # Hashrate for nir-pc is 0.212935 MHs
+2017-12-31 15:05:51,724 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:51,887 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:53,007 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:57,485 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:05:57,531 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:06:12,006 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:06:13,198 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:06:21,029 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:06:21,347 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:06:23,365 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:06:23,517 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:06:23,525 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:06:26,064 INFO proxy # Shutting down proxy...
+2017-12-31 15:06:26,064 INFO proxy # Shutting down proxy...
+2017-12-31 15:06:26,064 INFO proxy # Shutting down proxy...
+2017-12-31 15:06:26,064 INFO proxy # Shutting down proxy...
+2017-12-31 15:06:26,065 INFO proxy # Disconnected from Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:06:26,065 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:06:26,065 INFO proxy # Disconnected from Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:06:26,065 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:06:26,066 INFO proxy # Disconnected from Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:06:26,066 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:06:26,066 INFO proxy # Disconnected from Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:06:26,066 INFO stats # 0 peers connected, state changed 1 times
+2017-12-31 15:19:20,064 WARNING proxy # Ethereum Stratum proxy version: 0.0.5
+2017-12-31 15:19:20,065 WARNING proxy # Trying to connect to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:19:20,065 WARNING proxy # Trying to connect to failover Stratum pool-1 at us2.ethermine.org:4444
+2017-12-31 15:19:20,065 WARNING proxy # Trying to connect to failover Stratum pool-2 at eth-us.dwarfpool.com:8008
+2017-12-31 15:19:20,065 WARNING proxy # Trying to connect to failover Stratum pool-3 at eth-hk.dwarfpool.com:8008
+2017-12-31 15:19:20,253 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:19:20,253 INFO proxy # Connected to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:19:20,278 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:19:20,278 INFO proxy # Connected to Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:19:20,289 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:19:20,290 INFO proxy # Connected to Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:19:20,298 WARNING proxy # -----------------------------------------------------------------------
+2017-12-31 15:19:20,298 WARNING proxy # PROXY IS LISTENING ON ALL IPs ON PORT 8080
+2017-12-31 15:19:20,298 WARNING proxy # -----------------------------------------------------------------------
+2017-12-31 15:19:20,298 WARNING proxy # Wallet: 0x9A76dcdda2DC9f2Af446E12AfDF44e74a788A5Fa
+2017-12-31 15:19:20,299 WARNING proxy # Worker ID enabled: True
+2017-12-31 15:19:20,299 WARNING proxy # Email monitoring disabled
+2017-12-31 15:19:20,299 WARNING proxy # Failover enabled: True
+2017-12-31 15:19:20,299 WARNING proxy # -----------------------------------------------------------------------
+2017-12-31 15:19:20,356 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:19:20,435 INFO stats # 4 peers connected, state changed 1 times
+2017-12-31 15:19:20,435 INFO proxy # Connected to Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:19:21,208 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:19:50,526 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:20:07,700 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:20:13,115 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:20:50,138 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:20:52,739 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:21:00,289 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:21:02,726 INFO proxy # Shutting down proxy...
+2017-12-31 15:21:02,727 INFO proxy # Shutting down proxy...
+2017-12-31 15:21:02,727 INFO proxy # Shutting down proxy...
+2017-12-31 15:21:02,727 INFO proxy # Shutting down proxy...
+2017-12-31 15:21:02,728 INFO proxy # Disconnected from Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:21:02,729 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:21:02,729 INFO proxy # Disconnected from Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:21:02,729 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:21:02,730 INFO proxy # Disconnected from Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:21:02,730 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:21:02,731 INFO proxy # Disconnected from Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:21:02,731 INFO stats # 0 peers connected, state changed 1 times
+2017-12-31 15:39:12,054 WARNING proxy # Ethereum Stratum proxy version: 0.0.5
+2017-12-31 15:39:12,054 WARNING proxy # Trying to connect to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:39:12,054 WARNING proxy # Trying to connect to failover Stratum pool-1 at us2.ethermine.org:4444
+2017-12-31 15:39:12,054 WARNING proxy # Trying to connect to failover Stratum pool-2 at eth-us.dwarfpool.com:8008
+2017-12-31 15:39:12,054 WARNING proxy # Trying to connect to failover Stratum pool-3 at eth-hk.dwarfpool.com:8008
+2017-12-31 15:39:12,142 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:39:12,142 INFO proxy # Connected to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:39:12,164 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:39:12,164 INFO proxy # Connected to Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:39:12,176 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:39:12,176 INFO proxy # Connected to Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:39:12,189 WARNING proxy # -----------------------------------------------------------------------
+2017-12-31 15:39:12,190 WARNING proxy # PROXY IS LISTENING ON ALL IPs ON PORT 8080
+2017-12-31 15:39:12,190 WARNING proxy # -----------------------------------------------------------------------
+2017-12-31 15:39:12,190 WARNING proxy # Wallet: 0x9A76dcdda2DC9f2Af446E12AfDF44e74a788A5Fa
+2017-12-31 15:39:12,190 WARNING proxy # Worker ID enabled: True
+2017-12-31 15:39:12,190 WARNING proxy # Email monitoring disabled
+2017-12-31 15:39:12,190 WARNING proxy # Failover enabled: True
+2017-12-31 15:39:12,191 WARNING proxy # -----------------------------------------------------------------------
+2017-12-31 15:39:12,240 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:39:12,327 INFO stats # 4 peers connected, state changed 1 times
+2017-12-31 15:39:12,328 INFO proxy # Connected to Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:39:20,910 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:39:42,639 WARNING proxy # Ethereum Stratum proxy version: 0.0.5
+2017-12-31 15:39:42,639 WARNING proxy # Trying to connect to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:39:42,640 WARNING proxy # Trying to connect to failover Stratum pool-1 at us2.ethermine.org:4444
+2017-12-31 15:39:42,640 WARNING proxy # Trying to connect to failover Stratum pool-2 at eth-us.dwarfpool.com:8008
+2017-12-31 15:39:42,640 WARNING proxy # Trying to connect to failover Stratum pool-3 at eth-hk.dwarfpool.com:8008
+2017-12-31 15:39:42,685 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:39:42,685 INFO proxy # Connected to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:39:42,690 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:39:42,690 INFO proxy # Connected to Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:39:42,696 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:39:42,696 INFO proxy # Connected to Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:39:42,781 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:39:42,879 INFO stats # 4 peers connected, state changed 1 times
+2017-12-31 15:39:42,879 INFO proxy # Connected to Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:39:53,201 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:39:54,116 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:39:54,526 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:39:55,474 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:39:58,493 WARNING proxy # Ethereum Stratum proxy version: 0.0.5
+2017-12-31 15:39:58,493 WARNING proxy # Trying to connect to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:39:58,493 WARNING proxy # Trying to connect to failover Stratum pool-1 at us2.ethermine.org:4444
+2017-12-31 15:39:58,493 WARNING proxy # Trying to connect to failover Stratum pool-2 at eth-us.dwarfpool.com:8008
+2017-12-31 15:39:58,494 WARNING proxy # Trying to connect to failover Stratum pool-3 at eth-hk.dwarfpool.com:8008
+2017-12-31 15:39:58,543 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:39:58,544 INFO proxy # Connected to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:39:58,556 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:39:58,556 INFO proxy # Connected to Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:39:58,577 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:39:58,577 INFO proxy # Connected to Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:39:58,632 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:39:58,745 INFO stats # 4 peers connected, state changed 1 times
+2017-12-31 15:39:58,746 INFO proxy # Connected to Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:39:58,961 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:39:58,984 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:39:59,794 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:01,418 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:01,435 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:01,988 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:02,038 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:02,968 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:03,077 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:04,501 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:25,075 WARNING proxy # Ethereum Stratum proxy version: 0.0.5
+2017-12-31 15:40:25,075 WARNING proxy # Trying to connect to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:40:25,076 WARNING proxy # Trying to connect to failover Stratum pool-1 at us2.ethermine.org:4444
+2017-12-31 15:40:25,076 WARNING proxy # Trying to connect to failover Stratum pool-2 at eth-us.dwarfpool.com:8008
+2017-12-31 15:40:25,076 WARNING proxy # Trying to connect to failover Stratum pool-3 at eth-hk.dwarfpool.com:8008
+2017-12-31 15:40:25,121 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:40:25,121 INFO proxy # Connected to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:40:25,127 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:40:25,127 INFO proxy # Connected to Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:40:25,128 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:40:25,129 INFO proxy # Connected to Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:40:25,207 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:25,305 INFO stats # 4 peers connected, state changed 1 times
+2017-12-31 15:40:25,305 INFO proxy # Connected to Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:40:31,084 INFO proxy # Shutting down proxy...
+2017-12-31 15:40:31,084 INFO proxy # Shutting down proxy...
+2017-12-31 15:40:31,085 INFO proxy # Shutting down proxy...
+2017-12-31 15:40:31,085 INFO proxy # Shutting down proxy...
+2017-12-31 15:40:31,086 INFO proxy # Disconnected from Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:40:31,086 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:40:31,086 INFO proxy # Disconnected from Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:40:31,087 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:40:31,087 INFO proxy # Disconnected from Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:40:31,087 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:40:31,088 INFO proxy # Disconnected from Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:40:31,088 INFO stats # 0 peers connected, state changed 1 times
+2017-12-31 15:40:40,945 WARNING proxy # Ethereum Stratum proxy version: 0.0.5
+2017-12-31 15:40:40,945 WARNING proxy # Trying to connect to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:40:40,945 WARNING proxy # Trying to connect to failover Stratum pool-1 at us2.ethermine.org:4444
+2017-12-31 15:40:40,945 WARNING proxy # Trying to connect to failover Stratum pool-2 at eth-us.dwarfpool.com:8008
+2017-12-31 15:40:40,946 WARNING proxy # Trying to connect to failover Stratum pool-3 at eth-hk.dwarfpool.com:8008
+2017-12-31 15:40:40,990 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:40:40,991 INFO proxy # Connected to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:40:40,997 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:40:40,997 INFO proxy # Connected to Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:40:40,998 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:40:40,999 INFO proxy # Connected to Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:40:41,087 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:41,090 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:41,173 INFO stats # 4 peers connected, state changed 1 times
+2017-12-31 15:40:41,173 INFO proxy # Connected to Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:40:45,204 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:45,230 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:45,369 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:45,486 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:46,021 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:46,837 INFO proxy # Shutting down proxy...
+2017-12-31 15:40:46,838 INFO proxy # Shutting down proxy...
+2017-12-31 15:40:46,838 INFO proxy # Shutting down proxy...
+2017-12-31 15:40:46,838 INFO proxy # Shutting down proxy...
+2017-12-31 15:40:46,839 INFO proxy # Disconnected from Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:40:46,839 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:40:46,840 INFO proxy # Disconnected from Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:40:46,840 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:40:46,841 INFO proxy # Disconnected from Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:40:46,841 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:40:46,841 INFO proxy # Disconnected from Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:40:46,842 INFO stats # 0 peers connected, state changed 1 times
+2017-12-31 15:40:55,938 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:55,973 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:57,875 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:58,666 WARNING proxy # Ethereum Stratum proxy version: 0.0.5
+2017-12-31 15:40:58,666 WARNING proxy # Trying to connect to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:40:58,666 WARNING proxy # Trying to connect to failover Stratum pool-1 at us2.ethermine.org:4444
+2017-12-31 15:40:58,666 WARNING proxy # Trying to connect to failover Stratum pool-2 at eth-us.dwarfpool.com:8008
+2017-12-31 15:40:58,666 WARNING proxy # Trying to connect to failover Stratum pool-3 at eth-hk.dwarfpool.com:8008
+2017-12-31 15:40:58,712 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:40:58,712 INFO proxy # Connected to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:40:58,718 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:40:58,718 INFO proxy # Connected to Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:40:58,745 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:40:58,745 INFO proxy # Connected to Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:40:58,810 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:40:58,880 INFO stats # 4 peers connected, state changed 1 times
+2017-12-31 15:40:58,881 INFO proxy # Connected to Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:41:03,262 INFO proxy # Shutting down proxy...
+2017-12-31 15:41:03,263 INFO proxy # Shutting down proxy...
+2017-12-31 15:41:03,263 INFO proxy # Shutting down proxy...
+2017-12-31 15:41:03,263 INFO proxy # Shutting down proxy...
+2017-12-31 15:41:03,264 INFO proxy # Disconnected from Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:41:03,264 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:41:03,265 INFO proxy # Disconnected from Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:41:03,265 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:41:03,265 INFO proxy # Disconnected from Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:41:03,266 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:41:03,266 INFO proxy # Disconnected from Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:41:03,266 INFO stats # 0 peers connected, state changed 1 times
+2017-12-31 15:41:10,821 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:10,857 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:10,890 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:14,536 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:14,722 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:14,740 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:16,557 WARNING proxy # Ethereum Stratum proxy version: 0.0.5
+2017-12-31 15:41:16,557 WARNING proxy # Trying to connect to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:41:16,557 WARNING proxy # Trying to connect to failover Stratum pool-1 at us2.ethermine.org:4444
+2017-12-31 15:41:16,557 WARNING proxy # Trying to connect to failover Stratum pool-2 at eth-us.dwarfpool.com:8008
+2017-12-31 15:41:16,558 WARNING proxy # Trying to connect to failover Stratum pool-3 at eth-hk.dwarfpool.com:8008
+2017-12-31 15:41:16,614 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:41:16,614 INFO proxy # Connected to Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:41:16,665 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:41:16,666 INFO proxy # Connected to Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:41:16,667 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:41:16,667 INFO proxy # Connected to Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:41:16,772 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:16,773 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:16,796 INFO stats # 4 peers connected, state changed 1 times
+2017-12-31 15:41:16,796 INFO proxy # Connected to Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:41:17,808 INFO proxy # Shutting down proxy...
+2017-12-31 15:41:17,808 INFO proxy # Shutting down proxy...
+2017-12-31 15:41:17,808 INFO proxy # Shutting down proxy...
+2017-12-31 15:41:17,809 INFO proxy # Shutting down proxy...
+2017-12-31 15:41:17,809 INFO proxy # Disconnected from Stratum pool at eth-us.dwarfpool.com:8008
+2017-12-31 15:41:17,810 INFO stats # 3 peers connected, state changed 1 times
+2017-12-31 15:41:17,810 INFO proxy # Disconnected from Stratum pool at eth-hk.dwarfpool.com:8008
+2017-12-31 15:41:17,811 INFO stats # 2 peers connected, state changed 1 times
+2017-12-31 15:41:17,811 INFO proxy # Disconnected from Stratum pool at us2.ethermine.org:4444
+2017-12-31 15:41:17,811 INFO stats # 1 peers connected, state changed 1 times
+2017-12-31 15:41:17,812 INFO proxy # Disconnected from Stratum pool at us1.ethermine.org:4444
+2017-12-31 15:41:17,812 INFO stats # 0 peers connected, state changed 1 times
+2017-12-31 15:41:22,346 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:22,511 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:23,205 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:51,060 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:51,097 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:41:51,909 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:42:07,164 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:42:07,191 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:42:08,172 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:42:08,315 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:42:08,334 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:42:09,175 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:42:43,502 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:42:43,521 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:42:44,333 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:42:59,465 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:42:59,494 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:00,086 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:07,887 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:07,889 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:07,910 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:08,502 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:08,531 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:09,196 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:09,227 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:10,770 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:47,949 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:47,998 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:48,431 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:48,600 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:43:49,697 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:00,368 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:00,433 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:00,878 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:09,066 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:09,219 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:09,681 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:19,325 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:19,333 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:20,272 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:49,113 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:49,466 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:50,184 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:57,239 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:57,538 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:57,926 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:58,105 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:44:58,128 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:00,441 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:08,729 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:08,801 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:09,916 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:16,996 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:17,320 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:18,048 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:19,567 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:19,783 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:20,372 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:24,593 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:24,778 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:25,263 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:33,394 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:33,452 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:35,385 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:43,558 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:43,578 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:44,268 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:56,424 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:56,438 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:45:56,456 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:46:16,791 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:46:16,808 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:46:17,650 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:46:26,179 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:46:26,201 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:46:26,903 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:46:33,687 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:46:33,710 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:46:35,168 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:47:05,098 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:47:05,121 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:47:05,820 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:47:22,172 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:47:22,194 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:47:23,687 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:47:32,304 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:47:32,340 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:47:33,192 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:08,051 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:08,082 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:08,941 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:16,807 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:16,837 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:17,799 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:18,690 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:18,827 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:19,160 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:19,241 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:20,908 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:27,725 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:27,743 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:28,037 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:36,604 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:37,009 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:37,610 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:58,670 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:58,822 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:48:59,771 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:05,748 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:05,769 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:05,904 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:26,466 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:26,635 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:26,688 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:36,392 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:36,416 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:36,440 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:53,592 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:53,673 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:49:53,765 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:50:07,954 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:50:07,985 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:50:08,875 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:50:17,968 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:50:18,118 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:50:18,693 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:50:46,101 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:50:46,146 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:50:46,761 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:52:19,854 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:52:19,922 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:52:20,288 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:52:48,044 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:52:48,171 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:52:50,486 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:05,882 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:05,902 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:06,224 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:06,305 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:06,664 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:06,955 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:06,997 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:07,633 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:07,665 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:08,744 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:18,671 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:19,027 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:53:21,205 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:00,171 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:00,454 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:00,897 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:07,934 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:07,954 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:08,096 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:11,093 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:11,147 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:11,364 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:26,719 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:26,743 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:27,596 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:27,857 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:27,999 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:28,763 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:35,603 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:35,618 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:36,937 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:51,372 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:51,407 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:54:53,130 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:07,811 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:07,839 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:08,245 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:21,295 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:21,379 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:21,811 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:21,862 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:21,951 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:22,412 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:24,404 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:24,531 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:25,728 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:30,852 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:31,093 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:31,137 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:37,451 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:37,514 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:37,616 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:39,434 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:39,467 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:40,237 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:47,781 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:47,849 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:47,946 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:48,222 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:48,267 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:55:49,772 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:56:38,286 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:56:38,311 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:56:38,599 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:56:39,957 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:56:40,013 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:56:40,491 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:05,063 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:05,131 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:07,125 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:08,666 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:08,729 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:09,196 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:09,676 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:09,698 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:10,130 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:27,593 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:27,613 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:28,460 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:39,457 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:39,511 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:57:39,653 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:01,355 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:01,408 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:01,934 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:12,424 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:12,462 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:12,614 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:37,011 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:37,139 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:37,306 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:38,710 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:38,956 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:39,436 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:53,151 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:53,171 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:53,567 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:56,852 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:56,904 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:58:57,900 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:04,089 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:04,125 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:04,698 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:07,818 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:07,881 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:08,069 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:16,219 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:16,386 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:17,170 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:19,545 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:19,553 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:19,673 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:30,265 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:30,318 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:30,541 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:47,270 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:47,294 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 15:59:47,914 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:08,599 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:08,779 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:11,777 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:15,341 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:15,363 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:15,954 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:40,378 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:40,419 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:40,452 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:53,769 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:53,834 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:53,865 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:58,147 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:58,178 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:00:58,742 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:01:07,369 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:01:07,406 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:01:09,884 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:01:23,952 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:01:23,985 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:01:24,832 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:01:28,857 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:01:28,878 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:01:29,098 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:01:32,266 INFO proxy # Hashrate for Nir-Mint-CPU is 0.0 MHs
+2017-12-31 16:02:00,836 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:02:00,935 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:02:01,257 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:02:39,454 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:02:39,752 INFO proxy # NEW_JOB MAIN_POOL
+2017-12-31 16:02:41,616 INFO proxy # NEW_JOB MAIN_POOL
