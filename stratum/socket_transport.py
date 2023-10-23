@@ -79,17 +79,16 @@ class SocketTransportClientFactory(ReconnectingClientFactory):
          
     def connection_timeout(self):
         self.timeout_handler = None
-        
+
         if self.client:
             return
-        
+
         e = custom_exceptions.TransportException("SocketTransportClientFactory connection timed out")
-        if not self.on_connect.called:
-            d = self.on_connect
-            self.on_connect = defer.Deferred()
-            d.errback(e)
-        else:
+        if self.on_connect.called:
             raise e
+        d = self.on_connect
+        self.on_connect = defer.Deferred()
+        d.errback(e)
         
     def rpc(self, method, params, worker, *args, **kwargs):
         if not self.client:

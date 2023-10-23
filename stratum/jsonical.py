@@ -67,9 +67,9 @@ class Encoder(json.JSONEncoder):
         passed object, not a serializable representation.
         """
         if isinstance(obj, (datetime.date, datetime.time, datetime.datetime)):
-            return '"%s"' % obj.isoformat()
+            return f'"{obj.isoformat()}"'
         elif isinstance(obj, unicode):
-            return '"%s"' % unicodedata.normalize('NFD', obj).encode('utf-8')
+            return f""""{unicodedata.normalize('NFD', obj).encode('utf-8')}\""""
         elif isinstance(obj, decimal.Decimal):
             return str(obj)
         return super(Encoder, self).default(obj)

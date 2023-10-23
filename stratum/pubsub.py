@@ -25,12 +25,11 @@ class Subscription(object):
         if hasattr(self, 'event'):
             if event:
                 raise Exception("Event name already defined in Subscription object")
+        elif event:
+            self.event = event
+
         else:
-            if not event:
-                raise Exception("Please define event name in constructor")
-            else:
-                self.event = event
-        
+            raise Exception("Please define event name in constructor")
         self.params = params # Internal parameters for subscription object
         self.connection_ref = None
             
@@ -41,7 +40,7 @@ class Subscription(object):
         '''This is an identifier for current subscription. It is sent to the client,
         so result should not contain any sensitive information.'''
         #return hashlib.md5(str((self.event, self.params))).hexdigest()
-        return "%s" % int(hashlib.md5( str((self.event, self.params)) ).hexdigest()[:12], 16)
+        return f"{int(hashlib.md5(str((self.event, self.params))).hexdigest()[:12], 16)}"
     
     def get_session(self):
         '''Connection session may be useful in filter or process functions'''
@@ -57,7 +56,7 @@ class Subscription(object):
     def emit_single(self, *args, **kwargs):
         '''Perform emit of this event just for current subscription.'''
         conn = self.connection_ref()
-        if conn == None:
+        if conn is None:
             # Connection is closed
             return
 
@@ -89,25 +88,25 @@ class Pubsub(object):
     
     @classmethod
     def subscribe(cls, connection, subscription):
-        if connection == None:
+        if connection is None:
             raise custom_exceptions.PubsubException("Subscriber not connected")
-        
+
         key = subscription.get_key()
         session = ConnectionRegistry.get_session(connection)
-        if session == None:
+        if session is None:
             raise custom_exceptions.PubsubException("No session found")
-        
+
         subscription.connection_ref = weakref.ref(connection)
         session.setdefault('subscriptions', {})
-        
+
         if key in session['subscriptions']:
             raise custom_exceptions.AlreadySubscribedException("This connection is already subscribed for such event.")
-        
+
         session['subscriptions'][key] = subscription
-                    
+
         cls.__subscriptions.setdefault(subscription.event, weakref.WeakKeyDictionary())
         cls.__subscriptions[subscription.event][subscription] = None
-        
+
         if hasattr(subscription, 'after_subscribe'):
             if connection.on_finish != None:
                 # If subscription is processed during the request, wait to
@@ -117,7 +116,7 @@ class Pubsub(object):
                 # If subscription is NOT processed during the request (any real use case?),
                 # process callback instantly (better now than never).
                 subscription.after_subscribe(True)
-        
+
         # List of 2-tuples is prepared for future multi-subscriptions
         return ((subscription.event, key, subscription),)
     
@@ -151,27 +150,25 @@ class Pubsub(object):
     def get_subscription(cls, connection, event, key=None):
         '''Return subscription object for given connection and event'''
         session = ConnectionRegistry.get_session(connection)
-        if session == None:
+        if session is None:
             raise custom_exceptions.PubsubException("No session found")
 
-        if key == None:    
-            sub = [ sub for sub in session.get('subscriptions', {}).values() if sub.event == event ]
-            try:
-                return sub[0]
-            except IndexError:
-                raise custom_exceptions.PubsubException("Not subscribed for event %s" % event)
-
-        else:
+        if key is not None:
             raise Exception("Searching subscriptions by key is not implemented yet")
+        sub = [ sub for sub in session.get('subscriptions', {}).values() if sub.event == event ]
+        try:
+            return sub[0]
+        except IndexError:
+            raise custom_exceptions.PubsubException(f"Not subscribed for event {event}")
               
     @classmethod
     def iterate_subscribers(cls, event):
         for subscription in cls.__subscriptions.get(event, weakref.WeakKeyDictionary()).iterkeyrefs():
             subscription = subscription()
-            if subscription == None:
+            if subscription is None:
                 # Subscriber is no more connected
                 continue
-            
+
             yield subscription
             
     @classmethod

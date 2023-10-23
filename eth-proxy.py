@@ -11,7 +11,7 @@ import stratum.logger
 log = stratum.logger.get_logger('proxy')
 
 if __name__ == '__main__':
-    if len(settings.WALLET)!=42 and len(settings.WALLET)!=40:
+    if len(settings.WALLET) not in [42, 40]:
         log.error("Wrong WALLET!")
         sys.exit()
     settings.CUSTOM_EMAIL = settings.MONITORING_EMAIL if settings.MONITORING_EMAIL and settings.MONITORING else ""
@@ -62,7 +62,11 @@ def on_connect(f):
 
     # Get first job and user_id
     debug = "_debug" if settings.DEBUG else ""
-    initial_job = (yield f.rpc('eth_submitLogin', [settings.WALLET, settings.CUSTOM_EMAIL], 'Proxy_'+version.VERSION+debug))
+    initial_job = yield f.rpc(
+        'eth_submitLogin',
+        [settings.WALLET, settings.CUSTOM_EMAIL],
+        f'Proxy_{version.VERSION}{debug}',
+    )
 
     reactor.callLater(0, ping, f)
 
@@ -78,7 +82,7 @@ def on_disconnect(f):
 def main():
     reactor.disconnectAll()
 
-    log.warning("Ethereum Stratum proxy version: %s" % version.VERSION)
+    log.warning(f"Ethereum Stratum proxy version: {version.VERSION}")
 
     # Connect to Stratum pool, main monitoring connection
     log.warning("Trying to connect to Stratum pool at %s:%d" % (settings.POOL_HOST, settings.POOL_PORT))
@@ -156,13 +160,13 @@ def main():
     else:
         log.warning("LISTENING FOR MINERS ON http://%s:%d" % (settings.HOST, settings.PORT))
     log.warning("-----------------------------------------------------------------------")
-    log.warning("Wallet: %s" % settings.WALLET)
-    log.warning("Worker ID enabled: %s" % settings.ENABLE_WORKER_ID)
+    log.warning(f"Wallet: {settings.WALLET}")
+    log.warning(f"Worker ID enabled: {settings.ENABLE_WORKER_ID}")
     if settings.MONITORING:
-        log.warning("Email monitoring on %s" % settings.MONITORING_EMAIL)
+        log.warning(f"Email monitoring on {settings.MONITORING_EMAIL}")
     else:
         log.warning("Email monitoring disabled")
-    log.warning("Failover enabled: %s" % settings.POOL_FAILOVER_ENABLE)
+    log.warning(f"Failover enabled: {settings.POOL_FAILOVER_ENABLE}")
     log.warning("-----------------------------------------------------------------------")
 
 if __name__ == '__main__':
