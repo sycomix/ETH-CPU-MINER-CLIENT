@@ -86,16 +86,15 @@ def getSession(self, sessionInterface=None, cookie_prefix='TWISTEDSESSION'):
     # Session management
     if not self.session:
         cookiename = string.join([cookie_prefix] + self.sitepath, "_")
-        sessionCookie = self.getCookie(cookiename)
-        if sessionCookie:
+        if sessionCookie := self.getCookie(cookiename):
             try:
                 self.session = self.site.getSession(sessionCookie)
             except KeyError:
                 pass
-        # if it still hasn't been set, fix it up.
-        if not self.session:
-            self.session = self.site.makeSession()
-            self.addCookie(cookiename, self.session.uid, path='/')
+    # if it still hasn't been set, fix it up.
+    if not self.session:
+        self.session = self.site.makeSession()
+        self.addCookie(cookiename, self.session.uid, path='/')
     self.session.touch()
     if sessionInterface:
         return self.session.getComponent(sessionInterface)
@@ -142,8 +141,8 @@ class Root(Resource):
         
     def render_GET(self, request):
         if not settings.BROWSER_ENABLE:
-            return "Welcome to %s server. Use HTTP POST to talk with the server." % settings.USER_AGENT
-        
+            return f"Welcome to {settings.USER_AGENT} server. Use HTTP POST to talk with the server."
+
         # TODO: Web browser
         return "Web browser not implemented yet"
     
@@ -169,17 +168,17 @@ class Root(Resource):
         request.setHeader('server', settings.USER_AGENT)
         request.setHeader('x-session-timeout', session.sessionTimeout)
         request.setHeader('access-control-allow-origin', '*') # Allow access from any other domain
-          
+
         # Update client's IP address     
         session.transport.peer = request.getHost()
- 
+
         # Although it isn't intuitive at all, request.getHeader reads request headers,
         # but request.setHeader (few lines above) writes response headers...
         if 'application/stratum' not in request.getHeader('content-type'):
             session.transport.write("%s\n" % json.dumps({'id': None, 'result': None, 'error': (-1, "Content-type must be 'application/stratum'. See http://stratum.bitcoin.cz for more info.", "")}))
             self._finish(None, request, session.transport, session.lock)
             return
-        
+
         if not session.protocol:            
             # Build a "protocol connection"
             proto = Protocol()
@@ -189,18 +188,16 @@ class Root(Resource):
             session.protocol = proto
         else:
             proto = session.protocol
- 
+
         # Update callback URL if presented
         callback_url = request.getHeader('x-callback-url')
-        if callback_url != None:
-            if callback_url == '':
-                # Blank value of callback URL switches HTTP Push back to HTTP Poll
-                session.transport.push_url = None
-            else:
-                session.transport.push_url = callback_url 
-                  
-        data = request.content.read()
-        if data:
+        if callback_url == '':
+            # Blank value of callback URL switches HTTP Push back to HTTP Poll
+            session.transport.push_url = None
+        elif callback_url is not None:
+            session.transport.push_url = callback_url 
+
+        if data := request.content.read():
             counter = RequestCounter()
             counter.on_finish.addCallback(self._finish, request, session.transport, session.lock)
             proto.dataReceived(data, request_counter=counter)

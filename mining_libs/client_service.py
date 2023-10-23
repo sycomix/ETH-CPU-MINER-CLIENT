@@ -43,13 +43,13 @@ class ClientMiningService(GenericEventHandler):
         # Yay, we received something from the pool,
         # let's restart the timeout.
         self.reset_timeout()
-        
+
         if method == 'eth_getWork':
             '''Proxy just received information about new mining job'''
             # Broadcast to getwork clients
             job = Job.build_from_pool(params)
             self.job_registry.replace_job(job, connection_ref)
-            
+
         else:
             '''Pool just asked us for something which we don't support...'''
-            log.error("Unhandled method %s with params %s" % (method, params))
+            log.error(f"Unhandled method {method} with params {params}")

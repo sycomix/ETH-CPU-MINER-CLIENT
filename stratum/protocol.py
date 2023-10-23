@@ -45,7 +45,7 @@ class Protocol(LineOnlyReceiver):
 
     def get_ident(self):
         # Get global unique ID of connection
-        return "%s:%s" % (self.proxied_ip or self.transport.getPeer().host, "%x" % id(self))
+        return f'{self.proxied_ip or self.transport.getPeer().host}:{"%x" % id(self)}'
     
     def get_session(self):
         return self.session
@@ -65,19 +65,17 @@ class Protocol(LineOnlyReceiver):
         # Read settings.TCP_PROXY_PROTOCOL documentation
         self.expect_tcp_proxy_protocol_header = self.factory.__dict__.get('tcp_proxy_protocol_enable', False)
         self.proxied_ip = None # IP obtained from TCP proxy protocol
-        
+
         self.request_id = 1
         self.lookup_table = {}
         self.event_handler = self.factory.event_handler()
         self.on_disconnect = defer.Deferred()
         self.on_finish = None # Will point to defer which is called
-                        # once all client requests are processed
-        
         # Initiate connection session
         self.session = {}
-        
+
         stats.PeerStats.client_connected(self._get_ip())
-        log.debug("Connected %s" % self.transport.getPeer().host)
+        log.debug(f"Connected {self.transport.getPeer().host}")
         connection_registry.ConnectionRegistry.add_connection(self)
     
     def transport_write(self, data):
@@ -99,11 +97,11 @@ class Protocol(LineOnlyReceiver):
         self.transport = None # Fixes memory leak (cyclic reference)
  
     def writeJsonRequest(self, method, params, worker, is_notification=False):
-        request_id = None if is_notification else self._get_id() 
+        request_id = None if is_notification else self._get_id()
         serialized = json.dumps({'id': request_id, 'method': method, 'params': params, 'jsonrpc':'2.0', 'worker': worker})
 
         if self.factory.debug:
-            log.debug("< %s" % serialized)
+            log.debug(f"< {serialized}")
 
         self.transport_write("%s\n" % serialized)
         return request_id
@@ -114,7 +112,7 @@ class Protocol(LineOnlyReceiver):
         serialized = json.dumps({'id': message_id, 'result': data, 'error': None, 'jsonrpc':'2.0'})
 
         if self.factory.debug:
-            log.debug("< %s" % serialized)
+            log.debug(f"< {serialized}")
 
         self.transport_write("%s\n" % serialized)
 
@@ -137,17 +135,14 @@ class Protocol(LineOnlyReceiver):
             # Throwing other exception class means that it is unhandled error
             # and we should log it.
             log.exception(failure)
-            
+
         code = getattr(failure.value, 'code', -1)
-        
+
         if message_id != None:
             # Other party doesn't care of error state for notifications
-            if settings.DEBUG:
-                tb = failure.getBriefTraceback()
-            else:
-                tb = None
+            tb = failure.getBriefTraceback() if settings.DEBUG else None
             self.writeJsonError(code, failure.getErrorMessage(), tb, message_id)
-                
+
         request_counter.decrease()
         
     def dataReceived(self, data, request_counter=None):
@@ -158,9 +153,9 @@ class Protocol(LineOnlyReceiver):
         TODO: This would deserve some unit test to be sure that future twisted versions
         will work nicely with this.'''
         
-        if request_counter == None:
+        if request_counter is None:
             request_counter = RequestCounter()
-            
+
         lines  = (self._buffer+data).split(self.delimiter)
         self._buffer = lines.pop(-1)
         request_counter.set_count(len(lines))
@@ -179,9 +174,9 @@ class Protocol(LineOnlyReceiver):
                 except Exception as exc:
                     request_counter.finish()
                     #log.exception("Processing of message failed")
-                    log.warning("Failed message: %s from %s" % (str(exc), self._get_ip()))
+                    log.warning(f"Failed message: {str(exc)} from {self._get_ip()}")
                     return error.ConnectionLost('Processing of message failed')
-                    
+
         if len(self._buffer) > self.MAX_LENGTH:
             request_counter.finish()
             return self.lineLengthExceeded(self._buffer)        
@@ -194,30 +189,32 @@ class Protocol(LineOnlyReceiver):
 
             # We don't expect this header during this session anymore
             self.expect_tcp_proxy_protocol_header = False
-            
+
             if line.startswith('PROXY'):
                 self.proxied_ip = line.split()[2]
 
                 # Let's process next line
                 request_counter.decrease()
                 return
-            
+
         try:
             message = json.loads(line)
         except:
             #self.writeGeneralError("Cannot decode message '%s'" % line)
             request_counter.finish()
-            raise custom_exceptions.ProtocolException("Cannot decode message '%s'" % line.strip())
-        
+            raise custom_exceptions.ProtocolException(
+                f"Cannot decode message '{line.strip()}'"
+            )
+
         if self.factory.debug:
-            log.debug("> %s" % message)
-        
+            log.debug(f"> {message}")
+
         msg_id = message.get('id', 0)
         #msg_method = message.get('method', None)
         #msg_params = message.get('params', None)
         msg_result = message.get('result', None)
         msg_error = message.get('error', None)
-                                        
+
         # If there's an error, handle it as errback
         if msg_error != None:
             meta['defer'].errback(custom_exceptions.RemoteServiceException(msg_error))
@@ -233,12 +230,12 @@ class Protocol(LineOnlyReceiver):
             else:
                 # It's notification, don't expect the response
                 request_counter.decrease()
-            
-        elif msg_id:
+
+        else:
             # It's a RPC response
             # Perform lookup to the table of waiting requests.
             request_counter.decrease()
-           
+
             try:
                 meta = self.lookup_table[msg_id]
                 if meta['method'] == "eth_submitWork":
@@ -250,16 +247,20 @@ class Protocol(LineOnlyReceiver):
                 del self.lookup_table[msg_id]
             except KeyError:
                 # When deferred object for given message ID isn't found, it's an error
-                raise custom_exceptions.ProtocolException("Lookup for deferred object for message ID '%s' failed." % msg_id)
+                raise custom_exceptions.ProtocolException(
+                    f"Lookup for deferred object for message ID '{msg_id}' failed."
+                )
 
             # If both result and error are null, handle it as a success with blank result
             meta['defer'].callback(msg_result)
             if not isinstance(msg_result, bool):
                 try:
                     result = self.event_handler._handle_event("eth_getWork", msg_result, connection_ref=self)
-                    if result == None:
+                    if result is None:
                         # event handler must return Deferred object or raise an exception for RPC request
-                        raise custom_exceptions.MethodNotFoundException("Event handler cannot process '%s'" % msg_result)
+                        raise custom_exceptions.MethodNotFoundException(
+                            f"Event handler cannot process '{msg_result}'"
+                        )
                 except:
                     pass
             
@@ -296,7 +297,7 @@ class ClientProtocol(Protocol):
             self.factory.timeout_handler = None
 
         if isinstance(getattr(self.factory, 'after_connect', None), list):
-            log.debug("Resuming connection: %s" % self.factory.after_connect)
+            log.debug(f"Resuming connection: {self.factory.after_connect}")
             for cmd in self.factory.after_connect:
                 self.rpc(cmd[0], cmd[1], cmd[2])
 

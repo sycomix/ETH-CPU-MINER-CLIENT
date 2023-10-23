@@ -9,7 +9,7 @@ class Semaphore:
         self.limit   = tokens
 
     def is_locked(self):
-        return (bool)(not self.tokens)
+        return not self.tokens
     
     def acquire(self):
         """Attempt to acquire the token.

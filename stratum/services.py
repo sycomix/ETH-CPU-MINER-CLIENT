@@ -21,15 +21,13 @@ class ResultObject(object):
             
 def wrap_result_object(obj):
     def _wrap(o):
-        if isinstance(o, ResultObject):
-            return o
-        return ResultObject(result=o)
-        
+        return o if isinstance(o, ResultObject) else ResultObject(result=o)
+
     if isinstance(obj, defer.Deferred):
         # We don't have result yet, just wait for it and wrap it later
         obj.addCallback(_wrap)
         return obj
-    
+
     return _wrap(obj)
 
 class ServiceFactory(object):
@@ -43,22 +41,22 @@ class ServiceFactory(object):
         # Splits the service type and method name
         (service_type, method_name) = method.rsplit('.', 1)
         vendor = None
-        
+
         if '[' in service_type:
             # Use regular expression only when brackets found
             try:
                 vendor = VENDOR_RE.search(service_type).group(1)
-                service_type = service_type.replace('[%s]' % vendor, '')
+                service_type = service_type.replace(f'[{vendor}]', '')
             except:
                 raise
                 #raise custom_exceptions.ServiceNotFoundException("Invalid syntax in service name '%s'" % type_name[0])
-            
+
         return (service_type, vendor, method_name)
     
     @classmethod
     def call(cls, method, params, connection_ref=None):
         if method in ['submit','login']:
-            method = 'mining.%s' % method
+            method = f'mining.{method}'
             params = [params,]
         try:
             (service_type, vendor, func_name) = cls._split_method(method)
@@ -68,18 +66,20 @@ class ServiceFactory(object):
         try:
             if func_name.startswith('_'):
                 raise        
-        
+
             _inst = cls.lookup(service_type, vendor=vendor)()
             _inst.connection_ref = weakref.ref(connection_ref)
             func = _inst.__getattribute__(func_name)
             if not callable(func):
                 raise
         except:
-            raise custom_exceptions.MethodNotFoundException("Method '%s' not found for service '%s'" % (func_name, service_type))
-        
+            raise custom_exceptions.MethodNotFoundException(
+                f"Method '{func_name}' not found for service '{service_type}'"
+            )
+
         def _run(func, *params):
             return wrap_result_object(func(*params))
-        
+
         # Returns Defer which will lead to ResultObject sometimes
         return defer.maybeDeferred(_run, func, *params)
         
@@ -115,38 +115,48 @@ class ServiceFactory(object):
         service_type = meta.get('service_type')
         service_vendor = meta.get('service_vendor')
         is_default = meta.get('is_default')
-           
-        if str(_cls.__name__) in ('GenericService',):
+
+        if str(_cls.__name__) in {'GenericService'}:
             # str() is ugly hack, but it is avoiding circular references
             return
-        
+
         if not service_type:
-            raise custom_exceptions.MissingServiceTypeException("Service class '%s' is missing 'service_type' property." % _cls)
+            raise custom_exceptions.MissingServiceTypeException(
+                f"Service class '{_cls}' is missing 'service_type' property."
+            )
 
         if not service_vendor:
-            raise custom_exceptions.MissingServiceVendorException("Service class '%s' is missing 'service_vendor' property." % _cls)
+            raise custom_exceptions.MissingServiceVendorException(
+                f"Service class '{_cls}' is missing 'service_vendor' property."
+            )
 
-        if is_default == None:
-            raise custom_exceptions.MissingServiceIsDefaultException("Service class '%s' is missing 'is_default' property." % _cls)
-        
+        if is_default is None:
+            raise custom_exceptions.MissingServiceIsDefaultException(
+                f"Service class '{_cls}' is missing 'is_default' property."
+            )
+
         if is_default:
             # Check if there's not any other default service
-            
+
             try:
                 current = cls.lookup(service_type)
                 if current.is_default:
-                    raise custom_exceptions.DefaultServiceAlreadyExistException("Default service already exists for type '%s'" % service_type)
+                    raise custom_exceptions.DefaultServiceAlreadyExistException(
+                        f"Default service already exists for type '{service_type}'"
+                    )
             except custom_exceptions.ServiceNotFoundException:
                 pass
-        
+
         setup_func = meta.get('_setup', None)
         if setup_func != None:
             _cls()._setup()
 
         ServiceFactory.registry.setdefault(service_type, {})
         ServiceFactory.registry[service_type][service_vendor] = _cls
-        
-        log.msg("Registered %s for service '%s', vendor '%s' (default: %s)" % (_cls, service_type, service_vendor, is_default))
+
+        log.msg(
+            f"Registered {_cls} for service '{service_type}', vendor '{service_vendor}' (default: {is_default})"
+        )
 
 def synchronous(func):
     '''Run given method synchronously in separate thread and return the result.'''
@@ -178,9 +188,9 @@ def admin(func):
     return inner
 
 class ServiceMetaclass(type):
-    def __init__(cls, name, bases, _dict):
-        super(ServiceMetaclass, cls).__init__(name, bases, _dict)
-        ServiceFactory.register_service(cls, _dict)
+    def __init__(self, name, bases, _dict):
+        super(ServiceMetaclass, self).__init__(name, bases, _dict)
+        ServiceFactory.register_service(self, _dict)
         
 class GenericService(object):
     __metaclass__ = ServiceMetaclass
@@ -207,23 +217,23 @@ class ServiceDiscovery(GenericService):
     
     def list_methods(self, service_name):
         # Accepts also vendors in square brackets: firstbits[firstbits.com]
-        
+
         # Parse service type and vendor. We don't care about the method name,
         # but _split_method needs full path to some RPC method.
-        (service_type, vendor, _) = ServiceFactory._split_method("%s.foo" % service_name)
+        (service_type, vendor, _) = ServiceFactory._split_method(f"{service_name}.foo")
         service = ServiceFactory.lookup(service_type, vendor)
         out = []
-        
+
         for name, obj in service.__dict__.items():
-            
+
             if name.startswith('_'):
                 continue
-            
+
             if not callable(obj):
                 continue
 
             out.append(name)
-        
+
         return out
     
     def list_params(self, method):

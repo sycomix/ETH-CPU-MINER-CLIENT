@@ -38,20 +38,17 @@ class StringProducer(object):
     def stopProducing(self):
         pass
     
-@defer.inlineCallbacks        
+@defer.inlineCallbacks
 def get_page(url, method='GET', payload=None, headers=None):
     '''Downloads the page from given URL, using asynchronous networking'''
     agent = Agent(reactor)
 
-    producer = None
-    if payload:
-        producer = StringProducer(payload)
-
+    producer = StringProducer(payload) if payload else None
     _headers = {'User-Agent': [settings.USER_AGENT,]}
     if headers:
         for key, value in headers.items():
             _headers[key] = [value,]
-            
+
     response = (yield agent.request(
         method,
         str(url),
@@ -65,7 +62,7 @@ def get_page(url, method='GET', payload=None, headers=None):
         finished = defer.Deferred()
         (yield response).deliverBody(ResponseCruncher(finished))
     except:
-        raise Exception("Downloading page '%s' failed" % url)
+        raise Exception(f"Downloading page '{url}' failed")
 
     defer.returnValue((yield finished))   
     

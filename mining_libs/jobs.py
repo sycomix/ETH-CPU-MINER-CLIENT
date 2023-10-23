@@ -23,10 +23,7 @@ class JobRegistry(object):
         self.f3 = f3
         self.jobs = None
         # stop mining after 6 minutes if internet disconnected
-        if settings.COIN=="ETH":
-            self.coinTimeout = 360
-        else:
-            self.coinTimeout = 900 # For expanse 15 minutes waiting for new job
+        self.coinTimeout = 360 if settings.COIN=="ETH" else 900
         # Hook for LP broadcasts
         self.on_block = defer.Deferred()
 
@@ -57,16 +54,16 @@ class JobRegistry(object):
         if is_main_pool:
             log_text = "NEW_JOB MAIN_POOL"
         else:
-            log_text = "NEW_JOB FAILOVER_POOL%s" % pool_number
+            log_text = f"NEW_JOB FAILOVER_POOL{pool_number}"
 
         if (self.f and self.f.is_connected and is_main_pool) or \
-            (not self.f.is_connected and not is_main_pool and self.f1 and self.f1.is_connected and is_failover_pool1) or \
-            (not self.f.is_connected and not is_main_pool and self.f2 and self.f2.is_connected and is_failover_pool2 and not self.f1.is_connected) or \
-            (not self.f.is_connected and not is_main_pool and self.f3 and self.f3.is_connected and is_failover_pool3 and not self.f1.is_connected and not self.f2.is_connected):
+                (not self.f.is_connected and not is_main_pool and self.f1 and self.f1.is_connected and is_failover_pool1) or \
+                (not self.f.is_connected and not is_main_pool and self.f2 and self.f2.is_connected and is_failover_pool2 and not self.f1.is_connected) or \
+                (not self.f.is_connected and not is_main_pool and self.f3 and self.f3.is_connected and is_failover_pool3 and not self.f1.is_connected and not self.f2.is_connected):
             if self.jobs and self.jobs.params and self.jobs.params[0]==newjob.params[0]:
                 return
             if stratum.logger.settings.DEBUG:
-                log.debug("%s %s" % (log_text, newjob.params))
+                log.debug(f"{log_text} {newjob.params}")
             else:
                 log.info(log_text)
             self.jobs = newjob
@@ -75,30 +72,29 @@ class JobRegistry(object):
             self.on_block = defer.Deferred()
             on_block.callback(True)
         elif stratum.logger.settings.DEBUG:
-            log.debug("%s NOT_USED %s" % (log_text, newjob.params))
+            log.debug(f"{log_text} NOT_USED {newjob.params}")
 
     def submit(self, method, params, worker_name):
         log_text = ""
         if settings.DEBUG:
-            log_text = "%s by %s %s" % (method, worker_name, params)
+            log_text = f"{method} by {worker_name} {params}"
         elif method=="eth_submitWork":
-            log_text = "eth_submitWork %s by %s" % (params[0], worker_name)
+            log_text = f"eth_submitWork {params[0]} by {worker_name}"
         if self.f.is_connected:
             if log_text:
-                log.info( "MAIN %s" % log_text )
+                log.info(f"MAIN {log_text}")
             self.f.rpc(method, params, worker_name)
         elif self.f1 and self.f1.is_connected:
             if log_text:
-                log.info( "FAILOVER1 %s" % log_text )
+                log.info(f"FAILOVER1 {log_text}")
             self.f1.rpc(method, params, worker_name)
         elif self.f2 and self.f2.is_connected:
             if log_text:
-                log.info( "FAILOVER2 %s" % log_text )
+                log.info(f"FAILOVER2 {log_text}")
             self.f2.rpc(method, params, worker_name)
         elif self.f3 and self.f3.is_connected:
             if log_text:
-                log.info( "FAILOVER3 %s" % log_text )
+                log.info(f"FAILOVER3 {log_text}")
             self.f3.rpc(method, params, worker_name)
-        else:
-            if log_text:
-                log.info( "NO_SUBMIT_ALL_POOLS_DOWN %s" % log_text )
+        elif log_text:
+            log.info(f"NO_SUBMIT_ALL_POOLS_DOWN {log_text}")

@@ -20,14 +20,11 @@ class ConnectionRegistry(object):
     def get_session(cls, conn):
         if isinstance(conn, weakref.ref):
             conn = conn()
-            
+
         if isinstance(conn, GenericService):
             conn = conn.connection_ref()
-            
-        if conn == None:
-            return None
-        
-        return conn.get_session()
+
+        return None if conn is None else conn.get_session()
     
     @classmethod
     def iterate(cls):

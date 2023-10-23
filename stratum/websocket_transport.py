@@ -25,12 +25,8 @@ class WebsocketTransportFactory(WebSocketServerFactory):
         self.signing_id = signing_id
         self.protocol = WebsocketServerProtocol
         self.event_handler = event_handler
-        
-        if is_secure:
-            uri = "wss://0.0.0.0:%d" % port
-        else:
-            uri = "ws://0.0.0.0:%d" % port
-        
+
+        uri = "wss://0.0.0.0:%d" % port if is_secure else "ws://0.0.0.0:%d" % port
         WebSocketServerFactory.__init__(self, uri)
 
 # P.S. There's not Websocket client implementation yet
